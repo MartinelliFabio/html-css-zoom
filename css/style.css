@@ -12,6 +12,7 @@
     --black: #000000;
     --white: #ffffff;
     --gray: #4a4a4a;
+    --footer: #222222;
 }
 
 body {
@@ -20,9 +21,30 @@ body {
     color: var(--white);
 }
 
+header {
+    height: 50px;
+}
+
+main {
+    height: calc(100vh - 135px);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    height: 80px;
+    background-color: var(--footer);
+}
+
 .wrapper {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .flex-header {
@@ -33,12 +55,12 @@ body {
 
 nav p {
     display: block;
-    width: 100px;
     background-color: var(--gray);
     border-radius: 5px;
     text-align: center;
     line-height: 25px;
-    font-size: 13px;
+    padding: 0 5px;
+    font-size: 0.68vw;
     margin: 5px 5px 0;
 }
 
@@ -64,32 +86,77 @@ nav span {
     justify-content: center;
 }
 
-main {
-    margin-top: 30px;
-}
-
 main img {
     width: 100%;
 }
 
 .container {
-    margin: 0 auto;
-    width: 90%;
+    margin: 5px auto;
+    width: 85%;
 }
 
 .box {
     position: relative;
     padding-right: 5px;
-    margin-bottom: 10px;
     width: calc(100% / 7);
+    min-width: 100px;
+    margin-bottom: 3px;
 }
 
 .name {
     position: absolute;
     bottom: 0px;
     left: 0;
-    padding: 10px;
+    padding: 7px;
     background-color: rgba(0, 0, 0, 0.3);
-    font-size: 1.5vh;
+    font-size: 0.8vw;
 }
 
+.section-footer {
+    bottom: 0;     
+    height: 80px;     
+    width: 100%;        
+    display: flex;     
+    justify-content: space-between;
+}
+
+.section-footer .bar-icon {     
+    display: flex; 
+}
+
+.bar-item {     
+    color: white;     
+    display: flex;     
+    flex-direction: column;     
+    justify-content: center;     
+    flex-wrap: wrap;     
+    padding: 0 5px;     
+    align-items: center; 
+    font-size: 30px; 
+}
+
+.fa-angle-up {
+    font-size: 12px;
+}
+
+.description {     
+    font-size: 15px;
+    padding-top: 8px;  
+}
+
+.section-footer .bar-icon #share {     
+    margin-right: 15px; 
+}  
+
+.section-footer .bar-icon #share{     
+    color: #4BC800; 
+} 
+
+.meeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #4a4a4a;
+    color: #FF0000;
+}
