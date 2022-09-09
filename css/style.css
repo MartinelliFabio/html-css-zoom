@@ -29,7 +29,8 @@ header {
 }
 
 main {
-    height: calc(100vh - 135px);
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
 }
 
 ul {
@@ -108,7 +109,7 @@ main img {
     position: relative;
     padding-right: 5px;
     width: calc(100% / 7);
-    min-width: 100px;
+    min-width: 20vh;
     margin-bottom: 5px;
 }
 
@@ -143,15 +144,15 @@ main img {
     flex-wrap: wrap;     
     padding: 0 5px;     
     align-items: center; 
-    font-size: 30px; 
+    font-size: 1.5vw; 
 }
 
 .fa-angle-up {
-    font-size: 12px;
+    font-size: 0.7vw;
 }
 
 .description {     
-    font-size: 15px;
+    font-size: 0.8vw;
     padding-top: 8px;  
 }
 
@@ -170,4 +171,5 @@ main img {
     padding: 25px;
     background-color: #4a4a4a;
     color: #FF0000;
+    font-size: 0.8vw;
 }
