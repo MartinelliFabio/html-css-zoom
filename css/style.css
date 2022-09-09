@@ -30,7 +30,7 @@ header {
 
 main {
     height: calc(100vh - 130px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 ul {
